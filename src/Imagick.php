@@ -3876,7 +3876,7 @@ class Imagick implements Iterator
      * @param Argument $argument
      * @param bool $all_images
      */
-    private function addConvertArgument(Argument $argument, $all_images = false)
+    protected function addConvertArgument(Argument $argument, $all_images = false)
     {
         if ($all_images) {
             foreach ($this->files as &$file) {
